@@ -1,4 +1,4 @@
-package com.example.cicd_aos
+package com.jhk.cicd_aos
 
 import org.junit.Test
 

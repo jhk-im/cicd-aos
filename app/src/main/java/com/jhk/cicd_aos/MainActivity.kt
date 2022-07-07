@@ -1,4 +1,4 @@
-package com.example.cicd_aos
+package com.jhk.cicd_aos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
