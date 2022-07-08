@@ -22,11 +22,11 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
       
-    - name: ADD LOCAL PROPERTIES & GOOGLE SERVICE
-      run: |
-      echo '${{ secrets.LOCAL_PROPERTIES }}' > ./local.properties
-      echo '${{ secrets.GOOGLE_SERVICES_JSON }}' > ./app/google-services.json
+    - name: ADD LOCAL PROPERTIES
+      run: echo '${{ secrets.LOCAL_PROPERTIES }}' > ./local.properties
 
+    - name: ADD GOOGLE SERVICE
+      run: echo '${{ secrets.GOOGLE_SERVICES_JSON }}' > ./app/google-services.json
       
     - name: Build with Gradle
       run: ./gradlew build
