@@ -50,17 +50,17 @@ jobs:
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
 
-      - name: upload release artifact to Firebase App Distribution
-        run: firebase appdistribution:distribute app/build/outputs/bundle/release/app-release.aab --token ${{secrets.FIREBASE_TOKEN}} --app ${{secrets.FIREBASE_APP_ID}} --groups "trusted-testers" --release-notes "Release server"
+#      - name: upload release artifact to Firebase App Distribution
+#        run: firebase appdistribution:distribute app/build/outputs/bundle/release/app-release.aab --token ${{secrets.FIREBASE_TOKEN}} --app ${{secrets.FIREBASE_APP_ID}} --groups "trusted-testers" --release-notes "Release server"
 
-#      - name: Upload apk to Firebase App Distribution
-#        uses: wzieba/Firebase-Distribution-Github-Action@v1
-#        with:
-#          appId: ${{ secrets.FIREBASE_APP_ID }}
-#          token: ${{ secrets.FIREBASE_TOKEN }}
-#          groups: testers
-#          file: app/build/outputs/bundle/release/app-release.aab
-#
+      - name: Upload apk to Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{ secrets.FIREBASE_APP_ID }}
+          token: ${{ secrets.FIREBASE_TOKEN }}
+          groups: testers
+          file: app/build/outputs/bundle/release/app-release.aab
+
 #      - name: Create service_account.json
 #        id: createServiceAccount
 #        run: echo '${{ secrets.SERVICE_ACCOUNT_JSON }}' > service_account.json
