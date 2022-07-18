@@ -1,4 +1,4 @@
-name: STG - Deployment to Firebase App Distribution
+name: PROD - Deployment to GooglePlay
 on:
   push:
     branches: [ main ]
