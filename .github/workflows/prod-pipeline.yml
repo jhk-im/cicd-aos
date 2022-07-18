@@ -58,4 +58,7 @@ jobs:
         with:
           serviceAccountJson: service_account.json
           packageName: com.jhk.cicd_aos
+          track: production
+          relaseName: 'CICD DEMO (1.1)'
+          whatsNewDirectory: '<ko-KR>ko-KR 출시 노트를 여기에 입력하거나 붙여넣으세요.</ko-KR>'
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
