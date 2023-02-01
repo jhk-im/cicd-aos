@@ -13,9 +13,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Firebase
-        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        uses: pocket-apps/action-setup-firebase@v2
         with:
-          serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
+          firebase-token: ${{secrets.FIREBASE_TOKEN}}
 
       - name: set up JDK 11
         uses: actions/setup-java@v3.3.0
@@ -53,6 +53,6 @@ jobs:
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{ secrets.FIREBASE_APP_ID }}
-          token: ${{ secrets.FIREBASE_TOKEN }}
+          serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
           groups: testers
           file: app/build/outputs/bundle/release/app-release.aab
