@@ -58,4 +58,4 @@ jobs:
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: production
           status: inProgress
-          whatsNewDirectory: distribution/whatsnew-ko-KR
+          whatsNewDirectory: distribution/whatsnew
