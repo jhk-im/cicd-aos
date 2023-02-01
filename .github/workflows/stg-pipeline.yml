@@ -27,6 +27,9 @@ jobs:
       - name: ADD GOOGLE SERVICE
         run: echo '${{ secrets.GOOGLE_SERVICES_JSON }}' > ./app/google-services.json
 
+      - name: ADD CREDENTIAL_FILE_CONTENT
+        run: echo '${{ secrets.CREDENTIAL_FILE_CONTENT }}' > ./credential-file-content.json
+
       - name: Build with Gradle
         run: ./gradlew build
 
@@ -48,6 +51,6 @@ jobs:
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{ secrets.FIREBASE_APP_ID }}
-          serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
+          serviceCredentialsFileContent: ./credential-file-content.json
           groups: testers
           file: app/build/outputs/bundle/release/app-release.aab
