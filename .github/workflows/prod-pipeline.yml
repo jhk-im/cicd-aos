@@ -58,4 +58,4 @@ jobs:
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: production
           status: inProgress
-          relaseName: 'CICD DEMO (1.2)'
+          whatsNewDirectory: distribution/whatsnew
