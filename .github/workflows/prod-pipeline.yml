@@ -1,7 +1,8 @@
 name: PROD - Deployment to GooglePlay
 on:
   push:
-    branches: [ main ]
+    tags:
+      - PROD*
 
 jobs:
   build:
@@ -59,6 +60,6 @@ jobs:
           serviceAccountJson: service_account.json
           packageName: com.jhk.cicd_aos
           track: production
-          relaseName: 'CICD DEMO (1.1)'
-          whatsNewDirectory: '<ko-KR>ko-KR 출시 노트를 여기에 입력하거나 붙여넣으세요.</ko-KR>'
+          relaseName: 'CICD DEMO (1.2)'
+          whatsNewDirectory: '<ko-KR>version-1.2</ko-KR>'
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
