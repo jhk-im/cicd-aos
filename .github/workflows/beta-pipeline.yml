@@ -1,8 +1,8 @@
-name: STG - Deployment to Firebase App Distribution
+name: BETA - Deployment to Firebase App Distribution
 on:
   push:
     tags:
-      - STG*
+      - BETA*
 
 jobs:
   build:
