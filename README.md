@@ -13,6 +13,8 @@
 <img src="readme/cicd-pipeline-aos.png" width="1000" />
 </p>
 
+---
+
 ## Github Actions BETA Scripts
 ```bash
 # Github Actions
@@ -71,4 +73,18 @@ jobs:
           serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
           groups: testers
           file: app/build/outputs/bundle/release/app-release.aab
+```
+
+---
+
+## Github Actions Screts
+```bash
+LOCAL_PROPERTIES
+GOOGLE_SERVICES_JSON
+SIGNING_KEY
+ALIAS
+KEY_STORE_PASSWORD
+KEY_PASSWORD
+FIREBASE_APP_ID
+CREDENTIAL_FILE_CONTENT
 ```
