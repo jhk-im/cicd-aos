@@ -9,7 +9,6 @@
 
 [cicd-ios PlayStore](https://play.google.com/store/apps/details?id=com.jhk.cicd_aos)
 
-
 <p align="letft">  
 <img src="readme/cicd-pipeline-aos.png" width="1000" />
 </p>
