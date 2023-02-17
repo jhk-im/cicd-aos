@@ -7,7 +7,8 @@
   <a href="https://github.com/jhk-im"><img alt="Profile" src="https://img.shields.io/badge/github-jhk-orange?logo=github&logoColor=white"/></a> 
 </p>
 
-</br>
+[cicd-ios PlayStore](https://play.google.com/store/apps/details?id=com.jhk.cicd_aos)
+
 
 <p align="letft">  
 <img src="readme/cicd-pipeline-aos.png" width="1000" />
